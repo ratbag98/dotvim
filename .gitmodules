@@ -19,3 +19,57 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "/Users/rob/.vim/bundleruby-debugger"]
+	path = /Users/rob/.vim/bundleruby-debugger
+	url = git://github.com/astashov/vim-ruby-debugger.git
+[submodule "/Users/rob/.vim/bundle/supertab"]
+	path = /Users/rob/.vim/bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "/Users/rob/.vim/bundle/ruby-debugger"]
+	path = /Users/rob/.vim/bundle/ruby-debugger
+	url = git://github.com/astashov/vim-ruby-debugger.git
+[submodule "/Users/rob/.vim/bundle/snipmate.vim"]
+	path = /Users/rob/.vim/bundle/snipmate.vim
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "/Users/rob/.vim/bundle/javascript"]
+	path = /Users/rob/.vim/bundle/javascript
+	url = git://github.com/pangloss/vim-javascript.git
+[submodule "/Users/rob/.vim/bundle/textile.vim"]
+	path = /Users/rob/.vim/bundle/textile.vim
+	url = git://github.com/timcharper/textile.vim.git
+[submodule "/Users/rob/.vim/bundle/cucumber"]
+	path = /Users/rob/.vim/bundle/cucumber
+	url = git://github.com/tpope/vim-cucumber.git
+[submodule "/Users/rob/.vim/bundle/git"]
+	path = /Users/rob/.vim/bundle/git
+	url = git://github.com/tpope/vim-git.git
+[submodule "/Users/rob/.vim/bundle/haml"]
+	path = /Users/rob/.vim/bundle/haml
+	url = git://github.com/tpope/vim-haml.git
+[submodule "/Users/rob/.vim/bundle/markdown"]
+	path = /Users/rob/.vim/bundle/markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule "/Users/rob/.vim/bundle/repeat"]
+	path = /Users/rob/.vim/bundle/repeat
+	url = git://github.com/tpope/vim-repeat.git
+[submodule "/Users/rob/.vim/bundle/surround"]
+	path = /Users/rob/.vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "/Users/rob/.vim/bundle/vividchalk"]
+	path = /Users/rob/.vim/bundle/vividchalk
+	url = git://github.com/tpope/vim-vividchalk.git
+[submodule "/Users/rob/.vim/bundle/matchit"]
+	path = /Users/rob/.vim/bundle/matchit
+	url = git://github.com/tsaleh/vim-matchit.git
+[submodule "/Users/rob/.vim/bundle/shoulda"]
+	path = /Users/rob/.vim/bundle/shoulda
+	url = git://github.com/tsaleh/vim-shoulda.git
+[submodule "/Users/rob/.vim/bundle/tmux"]
+	path = /Users/rob/.vim/bundle/tmux
+	url = git://github.com/tsaleh/vim-tmux.git
+[submodule "/Users/rob/.vim/bundle/ruby"]
+	path = /Users/rob/.vim/bundle/ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "/Users/rob/.vim/bundle/Gist.vim"]
+	path = /Users/rob/.vim/bundle/Gist.vim
+	url = git://github.com/vim-scripts/Gist.vim.git

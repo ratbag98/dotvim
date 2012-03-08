@@ -32,14 +32,13 @@ require 'open-uri'
 
 bundles_dir = File.join(File.dirname(__FILE__), "bundle")
 
-FileUtils.cd(bundles_dir)
 
 
 git_bundles.each do |url|
-	dir = url.split('/').last.sub(/\.git$/, '')
-	dir.gsub!(/^vim-/,"")
+	dir = bundles_dir + '/' + url.split('/').last.sub(/\.git$/, '')
+	dir.gsub!(/\/vim-/,"/")
 	puts "unpacking #{url} into #{dir}"
-	`git add submodule #{url} #{dir}`
+	`git submodule add #{url} #{dir}`
 end
 
 vim_org_scripts.each do |name, script_id, script_type|
