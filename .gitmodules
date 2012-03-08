@@ -73,3 +73,6 @@
 [submodule "/Users/rob/.vim/bundle/Gist.vim"]
 	path = /Users/rob/.vim/bundle/Gist.vim
 	url = git://github.com/vim-scripts/Gist.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
