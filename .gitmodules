@@ -106,3 +106,6 @@
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
 	ignore = dirty
+[submodule "bundle/Gist.vim"]
+	path = bundle/Gist.vim
+	url = git://github.com/vim-scripts/Gist.vim.git
