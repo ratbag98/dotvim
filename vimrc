@@ -80,3 +80,4 @@ set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 autocmd vimenter * if !argc() | NERDTree | endif
 
 set t_Co=256
+map <F2> :NERDTreeToggle<CR>
