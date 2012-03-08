@@ -98,3 +98,10 @@
 	path = bundle/javascript
 	url = git://github.com/pangloss/vim-javascript.git
 	ignore = dirty
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = git://github.com/vim-scripts/ack.vim.git
+	ignore = dirty
+[submodule "bundle/IndexedSearch"]
+	path = bundle/IndexedSearch
+	url = git://github.com/vim-scripts/IndexedSearch
