@@ -81,3 +81,8 @@ autocmd vimenter * if !argc() | NERDTree | endif
 
 set t_Co=256
 map <F2> :NERDTreeToggle<CR>
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
