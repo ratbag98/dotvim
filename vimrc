@@ -25,8 +25,8 @@ set number      "show line numbers
 
 "display tabs and trailing spaces
 set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
-
+"set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+set listchars=tab:▸\ ,eol:¬
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
@@ -66,7 +66,6 @@ set statusline +=%2*0x%04B\ %*          "character under cursor
 
 set laststatus=2
 
-
 set formatoptions-=o "dont continue comments when pushing o/O
 "vertical/horizontal scroll off settings
 set scrolloff=3
@@ -86,3 +85,12 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+
+" Only do this part when compiled with support for autocommands
+if has("autocmd")
+  " When editing a file, always jump to the last cursor position
+  autocmd BufReadPost *
+  \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+  \   exe "normal g'\"" |
+  \ endif
+endif
