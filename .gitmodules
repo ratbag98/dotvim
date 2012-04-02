@@ -26,10 +26,6 @@
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
 	ignore = dirty
-[submodule "bundle/ruby-debugger"]
-	path = bundle/ruby-debugger
-	url = git://github.com/astashov/vim-ruby-debugger.git
-	ignore = dirty
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git

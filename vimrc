@@ -8,6 +8,8 @@ call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+let mapleader = ","
+
 if has('gui_running')
   let g:Powerline_symbols = 'fancy'
   set guifont=Menlo\ for\ Powerline:h11
@@ -97,4 +99,3 @@ if has("autocmd")
 endif
 set hidden
 
-map <leader>t :FuzzyFinderTextMate<CR>
