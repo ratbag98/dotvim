@@ -43,7 +43,7 @@ if v:version >= 703
 endif
 
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 
 
