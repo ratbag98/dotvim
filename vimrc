@@ -43,7 +43,6 @@ if v:version >= 703
     "undo settings
     set undodir=~/.vim/undofiles
     set undofile
-
     set colorcolumn=+1 "mark the ideal max text width
 endif
 
@@ -81,10 +80,7 @@ set wildmode=list:longest   "make cmdline tab completion similar to bash
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 
-" autocmd vimenter * if !argc() | NERDTree | endif
-
 set t_Co=256
-map <F2> :NERDTreeToggle<CR>
 
 set tabstop=2
 set softtabstop=2
@@ -99,3 +95,6 @@ if has("autocmd")
   \   exe "normal g'\"" |
   \ endif
 endif
+set hidden
+
+map <leader>t :FuzzyFinderTextMate<CR>
