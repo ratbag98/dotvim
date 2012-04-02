@@ -108,3 +108,6 @@
 [submodule "bundle/jquery"]
 	path = bundle/jquery
 	url = https://github.com/nono/jquery.vim.git
+[submodule "bundle/powerline"]
+	path = bundle/powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
