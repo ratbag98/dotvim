@@ -3,7 +3,6 @@
 set nocompatible
 
 "activate pathogen
-
 call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -17,11 +16,9 @@ end
 
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
-"allow backspacing over everything in insert mode
-set backspace=indent,eol,start
+set backspace=indent,eol,start "allow backspacing over everything in insert mode
 
-"store lots of :cmdline history
-set history=1000
+set history=1000 "store lots of :cmdline history
 
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
@@ -29,11 +26,8 @@ set showmode    "show current mode down the bottom
 filetype plugin indent on
 
 set number      "show line numbers
-
-"display tabs and trailing spaces
-set list
-"set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
-set listchars=tab:▸\ ,eol:¬
+set list        "display tabs and trailing spaces
+set listchars=tab:▸\ ,eol:¬ "set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
@@ -71,7 +65,6 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-" Only do this part when compiled with support for autocommands
 if has("autocmd")
   " When editing a file, always jump to the last cursor position
   autocmd BufReadPost *
