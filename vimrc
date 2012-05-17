@@ -81,3 +81,4 @@ if has("autocmd")
 endif
 set hidden
 
+set foldmethod=syntax
