@@ -75,3 +75,4 @@ endif
 set hidden
 
 set foldmethod=syntax
+set nofoldenable
