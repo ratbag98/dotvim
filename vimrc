@@ -76,3 +76,8 @@ set hidden
 
 set foldmethod=syntax
 set nofoldenable
+
+" coffee optimizations
+au BufWritePost *.coffee silent CoffeeMake!
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
