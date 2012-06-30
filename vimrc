@@ -9,9 +9,12 @@ call pathogen#helptags()
 
 let mapleader = ","
 
+let g:Powerline_symbols = 'fancy'
 if has('gui_running')
-  let g:Powerline_symbols = 'fancy'
   set guifont=Menlo\ for\ Powerline:h11
+  set background=light
+else
+  set background=dark
 end
 
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
@@ -43,7 +46,6 @@ if v:version >= 703
 endif
 
 syntax enable
-set background=dark
 colorscheme solarized
 
 set laststatus=2
