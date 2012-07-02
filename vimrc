@@ -13,6 +13,7 @@ let g:Powerline_symbols = 'fancy'
 if has('gui_running')
   set guifont=Menlo\ for\ Powerline:h11
   set background=light
+  set guioptions=egmrt  " hide the gui menubar
 else
   set background=dark
 end
