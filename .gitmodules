@@ -109,3 +109,6 @@
 [submodule "bundle/json"]
 	path = bundle/json
 	url = https://github.com/rogerz/vim-json
+[submodule "bundle/dbext"]
+	path = bundle/dbext
+	url = https://github.com/vim-scripts/dbext.vim.git
