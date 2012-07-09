@@ -118,3 +118,6 @@
   path = bundle/dbext
   url = https://github.com/vim-scripts/dbext.vim.git
   ignore = dirty
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
