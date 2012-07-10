@@ -72,15 +72,16 @@ if has("autocmd")
   \ if line("'\"") > 0 && line ("'\"") <= line("$") |
   \   exe "normal g'\"" |
   \ endif
+  "
+  " coffee optimizations
+  au BufWritePost *.coffee silent CoffeeMake!
+  au BufNewFile,BufReadPost *.coffee
+        \ setl shiftwidth=2 expandtab foldmethod=indent nofoldenable
 endif
 set hidden
 
 set foldmethod=syntax
 set nofoldenable
 
-" coffee optimizations
-au BufWritePost *.coffee silent CoffeeMake!
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
 let g:dbext_default_PGSQL_bin='/usr/local/bin/psql'
