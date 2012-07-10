@@ -18,8 +18,6 @@ else
   set background=dark
 end
 
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-
 set backspace=indent,eol,start "allow backspacing over everything in insert mode
 
 set history=1000 "store lots of :cmdline history
