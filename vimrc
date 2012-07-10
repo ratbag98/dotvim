@@ -85,3 +85,17 @@ set nofoldenable
 
 
 let g:dbext_default_PGSQL_bin='/usr/local/bin/psql'
+
+nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+function! <SID>StripTrailingWhitespaces()
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business
+  %s/\s\+$//e
+  " Cleanup: restore previous search history and cursor position.
+  let @/=_s
+  call cursor(l, c)
+endfunction
+
