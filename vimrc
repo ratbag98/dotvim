@@ -82,6 +82,7 @@ set hidden
 
 set foldmethod=syntax
 set nofoldenable
+set foldcolumn=1
 
 
 let g:dbext_default_PGSQL_bin='/usr/local/bin/psql'
@@ -99,3 +100,4 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
+set clipboard=unnamed
