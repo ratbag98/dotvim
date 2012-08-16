@@ -88,6 +88,8 @@ set foldcolumn=1
 let g:dbext_default_PGSQL_bin='/usr/local/bin/psql'
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+nnoremap <F6> :GundoToggle<CR>
+
 function! <SID>StripTrailingWhitespaces()
   " Preparation: save last search, and cursor position.
   let _s=@/
