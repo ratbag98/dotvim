@@ -82,7 +82,6 @@ set foldmethod=syntax
 set nofoldenable
 set foldcolumn=1
 
-
 let g:dbext_default_PGSQL_bin='/usr/local/bin/psql'
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
@@ -101,3 +100,14 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 set clipboard=unnamed
+
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+set formatprg=par
