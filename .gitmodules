@@ -106,10 +106,6 @@
   path = bundle/powerline
   url = https://github.com/Lokaltog/vim-powerline.git
   ignore = dirty
-[submodule "bundle/command-t"]
-  path = bundle/command-t
-  url = git://git.wincent.com/command-t.git
-  ignore = dirty
 [submodule "bundle/json"]
   path = bundle/json
   url = https://github.com/rogerz/vim-json
